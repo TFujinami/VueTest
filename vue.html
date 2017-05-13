@@ -1,0 +1,15 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+
+<div id="app">
+<p>{{ date }}の天気は{{ weather }}です。</p>
+</div>
+
+<script>
+const vm = new Vue({
+  el: '#app',
+  data: {
+    date: '今日',
+    weather: '晴れ',
+  },
+});
+</script>

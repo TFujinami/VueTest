@@ -1,0 +1,31 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+
+<ul id="app">
+<li v-for="item in items">{{ item.name }}は{{ item.price }}円です。</li>
+</ul>
+
+<script>
+const vm = new Vue({
+  el: '#app',
+  data: {
+    items: [
+      {
+        name: 'みかん',
+        price: 100,
+      },
+      {
+        name: 'もも',
+        price: 300,
+      },
+      {
+        name: 'いちじく',
+        price: 500,
+      },
+      {
+        name: 'メロン',
+        price: 1000,
+      },
+    ],
+  },
+});
+</script>
